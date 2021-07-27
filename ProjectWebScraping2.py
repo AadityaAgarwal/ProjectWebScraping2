@@ -17,7 +17,7 @@ temp_list=[]
 soup=bs(browser.text,'html.parser')
 star_table=soup.find_all('table')
 print(len(star_table))
-table_rows=star_table[4].find_all('tr')
+table_rows=star_table[3].find_all('tr')
 
 for trtag in table_rows:
     tdtags=trtag.find_all('td')
